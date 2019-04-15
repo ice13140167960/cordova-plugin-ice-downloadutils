@@ -1,4 +1,4 @@
-package cordova-plugin-ice-downloadutils;
+package com.ice.plugin.downloadutils;
 
 import com.ice.downloaddemo.MyDownloadUtils;
 

@@ -1,4 +1,4 @@
-package com.ice.downloaddemo;
+package com.ice.plugin.downloadutils;
 
 import android.app.DownloadManager;
 import android.content.Context;
