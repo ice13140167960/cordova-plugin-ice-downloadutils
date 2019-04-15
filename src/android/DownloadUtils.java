@@ -22,7 +22,7 @@ public class DownloadUtils extends CordovaPlugin {
             return true;
         }else if(action.equals("readFilePaths")){
             JSONArray jsonArray=MyDownloadUtils.readFilePaths(args.getString(0));
-            callbackContext.success(jsonArray.toString())
+            callbackContext.success(jsonArray.toString());
             return true;
         }else if(action.equals("openFile")){
             JSONObject jsonObject=args.getJSONObject(0);
