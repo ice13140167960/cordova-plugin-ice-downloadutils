@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-ice-downloadutils"
+    version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>DownloadUtils</name>
+    <js-module name="DownloadUtils" src="www/DownloadUtils.js">
+        <clobbers target="cordova.plugins.DownloadUtils" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="DownloadUtils">
+                <param name="android-package"
+                    value="cordova-plugin-ice-downloadutils.DownloadUtils" />
+            </feature>
+            <feature name="MyDownloadUtils">
+                <param name="android-package"
+                    value="cordova-plugin-ice-downloadutils.MyDownloadUtils" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        </config-file>
+        <source-file src="src/android/DownloadUtils.java"
+            target-dir="src/cordova-plugin-ice-downloadutils/DownloadUtils" />
+        <source-file src="src/android/MyDownloadUtils.java"
+            target-dir="src/cordova-plugin-ice-downloadutils/MyDownloadUtils" />
+    </platform>
+</plugin>
