@@ -1,0 +1,21 @@
+{
+  "name": "downloadutils",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ice13140167960/cordova-plugin-ice-downloadutils.git"
+  },
+  "cordova": {
+    "id": "cordova-plugin-ice-downloadutils",
+    "platforms": [
+      "android"
+    ]
+  },
+  "author": "ice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ice13140167960/cordova-plugin-ice-downloadutils/issues"
+  },
+  "homepage": "https://github.com/ice13140167960/cordova-plugin-ice-downloadutils#readme"
+}
