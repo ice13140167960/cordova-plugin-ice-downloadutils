@@ -31,6 +31,9 @@ public class MyDownloadUtils {
     public static JSONArray readFilePaths(String path){
         JSONArray jsonArray=new JSONArray();
         File directory=new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),path);
+        if(!directory.exists()){
+            directory.mkdirs();
+        }
         File[] files=directory.listFiles();
         for (File file : files) {
             jsonArray.put(file.getName());
