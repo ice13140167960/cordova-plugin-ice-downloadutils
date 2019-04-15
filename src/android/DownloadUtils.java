@@ -1,6 +1,6 @@
 package com.ice.plugin.downloadutils;
 
-import com.ice.downloaddemo.MyDownloadUtils;
+import com.ice.plugin.downloadutils.MyDownloadUtils;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
