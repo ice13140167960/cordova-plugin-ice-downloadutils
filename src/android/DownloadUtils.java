@@ -28,6 +28,9 @@ public class DownloadUtils extends CordovaPlugin {
             JSONObject jsonObject=args.getJSONObject(0);
             MyDownloadUtils.openFile(cordova.getActivity(),jsonObject.getString("path"),jsonObject.getString("type"));
             return true;
+        }else if(action.equals("getDirectory")){
+            callbackContext.success(MyDownloadUtils.getDirectory());
+            return true;
         }
         return false;
     }
