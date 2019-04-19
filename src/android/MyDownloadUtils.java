@@ -40,6 +40,10 @@ public class MyDownloadUtils {
         }
         return jsonArray;
     }
+    
+    public static String getDirectory(){
+        return Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath();
+    }
 
     /**
      *
