@@ -14,8 +14,8 @@ exports.readFilePaths = function (arg0, success, error) {
     exec(success, error, 'DownloadUtils', 'readFilePaths', [arg0]);
 };
 
-exports.getDirectory = function (success, error) {
-    exec(success, error, 'DownloadUtils', 'getDirectory');
+exports.getDirectory = function (arg0,success, error) {
+    exec(success, error, 'DownloadUtils', 'getDirectory', [arg0]);
 };
 
 /**
