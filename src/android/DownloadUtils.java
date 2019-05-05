@@ -31,6 +31,12 @@ public class DownloadUtils extends CordovaPlugin {
         }else if(action.equals("getDirectory")){
             callbackContext.success(MyDownloadUtils.getDirectory());
             return true;
+        }else if(action.equals("delete")){
+            JSONArray jsonArray=args.getJSONArray(0);
+            for (int i = 0; i <jsonArray.size(); i++) {
+                MyDownloadUtils.delete(cordova.getActivity(),jsonArray.getString(i));
+            }
+            return true;
         }
         return false;
     }

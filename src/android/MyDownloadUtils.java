@@ -16,6 +16,17 @@ import java.util.List;
 
 public class MyDownloadUtils {
 
+    public static void delete(Context context,String path){
+        if(Build.VERSION.SDK_INT>=24){//绕过7.0的文件权限检查
+            StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+            StrictMode.setVmPolicy(builder.build());
+        }
+        File file=new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),path);
+        if(file.exists()){
+            file.delete();
+        }
+    }
+
     public static void download(Context context,String url,String destinationPath){
         DownloadManager downloadManager = (DownloadManager) context.getSystemService(context.DOWNLOAD_SERVICE);
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));

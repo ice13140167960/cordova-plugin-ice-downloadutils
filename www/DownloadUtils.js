@@ -24,3 +24,7 @@ download({path:'',type:''})
 exports.openFile = function (arg0, success, error) {
     exec(success, error, 'DownloadUtils', 'openFile', [arg0]);
 };
+
+exports.delete = function (arg0, success, error) {
+    exec(success, error, 'DownloadUtils', 'delete', [arg0]);
+};
