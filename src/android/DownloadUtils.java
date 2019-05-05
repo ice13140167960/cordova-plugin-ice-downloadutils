@@ -33,7 +33,7 @@ public class DownloadUtils extends CordovaPlugin {
             return true;
         }else if(action.equals("delete")){
             JSONArray jsonArray=args.getJSONArray(0);
-            for (int i = 0; i <jsonArray.size(); i++) {
+            for (int i = 0; i <jsonArray.length(); i++) {
                 MyDownloadUtils.delete(cordova.getActivity(),jsonArray.getString(i));
             }
             return true;
