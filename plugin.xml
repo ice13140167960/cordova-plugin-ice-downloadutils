@@ -23,8 +23,8 @@
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
         </config-file>
         <source-file src="src/android/DownloadUtils.java"
-            target-dir="src/com/ice/plugin/downloadutils/DownloadUtils" />
+            target-dir="src/com/ice/plugin/downloadutils" />
         <source-file src="src/android/MyDownloadUtils.java"
-            target-dir="src/com/ice/plugin/downloadutils/MyDownloadUtils" />
+            target-dir="src/com/ice/plugin/downloadutils" />
     </platform>
 </plugin>
